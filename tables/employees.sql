@@ -8,5 +8,7 @@ CREATE or replace TABLE employee (
     dept_id    INT,
     manager_id INT NULL,
     FOREIGN KEY (dept_id)    REFERENCES department(dept_id),
-    FOREIGN KEY (manager_id) REFERENCES employee(emp_id)
+    FOREIGN KEY (manager_id) REFERENCES employee(emp_id),
+    test VARCHAR,
+    test2 VARCHAR
 );
